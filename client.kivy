@@ -1,0 +1,3 @@
+
+<Client>:
+    size: self.parent.size
