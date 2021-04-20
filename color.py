@@ -41,7 +41,7 @@ class ClientApp(App):
 
     @staticmethod
     def write_color(rgb : tuple["bn_low", "r_low", "g_low", "b_low", "bn_upp", "r_upp", "g_upp", "b_upp"]):
-        cmd = (",".join(map(str, rgb)) + ",").encode()
+        cmd = (",".join(map(str, rgb)) + ",|").encode()
         print(cmd)
         ARD.write(cmd)
 
